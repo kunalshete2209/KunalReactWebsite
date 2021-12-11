@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*-------------------------------------------Nav.jsx-------------------------------------------------*/
+nav{
+  top:0;
+  box-shadow: 0px 13px 24px 0px rgba(106, 61, 61, 0.08);
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+}
+
+nav .navbar-collapse .collapse{
+  display: inline-table;
+}
+
+@media (max-width:99px) 
+{
+
+  nav .navbar-collapse .collapse{
+      overflow: hidden;
+     
+  }
+
+  nav .navbar-collapse .active{
+  height:100vh ;
+  }
+}
+
+nav .navbar-collapse{
+  transition: .6s all ease-in-out;
+  height: 0;
+}
+
+.nav-link:hover{
+  color: red;
+}
+
+.menu_active{
+  font-weight: bold;
+ border-bottom: 1px solid black;
+
+}
+
+.navbar-nav{
+  margin-right: 30px;
+}
+
+.navbar-nav li{
+  padding: 10px;
+}  
+
+
+
+
+
+/*-------------------------------------------Useagain.jsx-------------------------------------------------*/
+#header{
+  width: 100%;
+  height: 70vh;
+  margin-top: 70px;
+}
+
+#header h1{
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-family: "Gill Sans Extrabold", sans-serif;
+  font-weight: 700;
+}
+
+#header .brand-name{
+  color: rgb(201, 131, 0);
+}
+
+
+.heading1{
+  margin-top: 170px;
+}
+
+#header h3{
+  font-size: 25px;
+  color: rgb(143, 137, 137);
+}
+
+.img-fluid-animated{
+  height: 500px;
+  width: 500px;
+  display: block;
+  margin-top: 70px;
+  margin-left: 120px;
+}
+
+
+#header button{
+  margin: 12px 8px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+#header .img-fluid-animated{
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down{
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down{
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+
+
+/*---------------------------Serviceinfo-----------------------------------------------*/
+
+
+.container1{
+  text-align:center;
+  color: rgba(123, 120, 117, 0.302);
+}
+
+.btn1{
+  
+justify-content: center;
+text-align:center;
+}
+
+/*-------------Response website-------------------*/
+
+@media (max-width:991px) {
+
+  #header{
+    height: 80vh;
+    text-align:center;
+  }
+
+  #header .header-img{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: -150px;
+    margin-left: -100px;
+   
+   
+  }
+  
+  #header .header-img img{
+    width: 90%;
+    height: 90%;
+    
+  }
+  #header h1{
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  #header h3{
+    text-align: center;
+    justify-content: center;
+    /*margin-bottom: 20px;*/
+
+  }
+}
+
+@media (max-width:768px) {
+ 
+  #header{
+   margin-top: 20px;
+   
+  }
+  
+  #header h1{
+    font-size: 30px;
+
+  }
+
+  #header h3{
+    font-size: 22px;
+    /*margin-bottom: 20px;*/
+
+  }
+}
+
+/*@media(min-width:1024px , max-width 1366px){
+  
+
+  for tablet resolutiion
+
+}*/
+
+#contactbutton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contactbutton:hover{
+  color: aquamarine;
+}
